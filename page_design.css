@@ -1,0 +1,55 @@
+.grid_header { 
+    grid-area: header; 
+    font-size: larger;
+    height: 15vh;
+}
+
+.grid_tasks {
+    grid-area: tasks;
+    width: 50vh;
+    gap: 50px;}
+
+.grid_priorities { 
+    grid-area: priorities;
+    width: 50vh;
+    gap: 50px;}
+
+.grid_extra { 
+    grid-area: extra;
+    height: 35vh;
+ }
+
+.grid_tasks,.grid_priorities{
+    height: 50vh; 
+}
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'tasks priorities'  
+    'extra extra';
+  gap: 10px;
+  background-color:  5555;/*change colors later*/
+  padding: 20px;
+  position:relative;
+}
+
+.grid-container > div {
+  background-color: 4444; /*change colors later*/
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+button{
+    position: relative;
+    left: 50%;
+    top: 85%;
+}
+
+body {
+    background-color: #1111; /*change colors later*/
+}
